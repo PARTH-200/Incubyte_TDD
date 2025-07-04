@@ -21,4 +21,11 @@ class IncubyteCalculatorStringApplicationTests {
 		assertEquals(5, calculator.add("5"));
 	}
 
+	@Test
+	public void should_return_sum_for_two_numbers() {
+		StringCalculator calculator = new StringCalculator();
+		assertEquals(3, calculator.add("1,2"));
+		assertEquals(10, calculator.add("4,6"));
+	}
+
 }
