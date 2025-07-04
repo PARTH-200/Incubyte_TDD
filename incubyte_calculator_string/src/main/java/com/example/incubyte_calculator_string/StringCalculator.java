@@ -6,6 +6,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringCalculator {
+
+    // Extract method for better readability
     private boolean isValidNumber(int number) {
         return number >= 0 && number <= 1000;
     }
